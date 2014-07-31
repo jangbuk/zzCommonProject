@@ -13,15 +13,8 @@
 @end
 
 @implementation zzMoveScaleImageController
-
 @synthesize myScrollView;
 @synthesize myImageView;
-
-//-(void)dealloc{
-//    [myScrollView release];
-//    [myImageView release];
-//    [super dealloc];
-//}
 
 -(void)loadView{
     [super loadView];
@@ -32,7 +25,7 @@
 -(void)clickEvent
 {
     CGFloat W = self.view.frame.size.width;//1024
-    CGFloat H = self.view.frame.size.height-64;//748
+    CGFloat H = self.view.frame.size.height;//748
     
     
    // NSLog(@"***********clickeventad");
@@ -50,7 +43,7 @@
     self.myScrollView.maximumZoomScale=10.0;
     [self.view addSubview:self.myScrollView];
     
-    UIImage *_image = m_image;//[UIImage imageNamed:imageFile];
+    UIImage *_image = self.m_image;//[UIImage imageNamed:imageFile];
 
     
     CGFloat iW;
@@ -79,7 +72,7 @@
 
 -(void)closeEvent:(id)sender{
    
-    [self ZAZoomView:myImageView oldScale:self.myScrollView.zoomScale newScale:1.5 time:0.5];
+    [self ZAZoomView:myImageView oldScale:self.myScrollView.zoomScale newScale:0.1 time:0.5];
     
 }
 
@@ -122,8 +115,7 @@
 }
 - (void)imageViewDidStop:(NSString *)animationID finished:(NSNumber *)finished context:(void *)context
 {
-//    self.view.hidden = YES;
-//    [self dismissViewControllerAnimated:YES completion:nil];
-       
+    self.view.hidden = YES;
+    [self dismissViewControllerAnimated:YES completion:nil];       
 }
 @end

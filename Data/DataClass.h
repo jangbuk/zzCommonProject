@@ -8,14 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-@interface MSG : NSObject
-@property (strong,nonatomic) NSString *detail;
-@property (strong,nonatomic) NSString *img;
-@property (strong,nonatomic) NSString *id;
-@property (strong,nonatomic) NSString *title;
-@property (strong,nonatomic) NSString *detailUrl;
-@property (strong,nonatomic) NSString *begintime;
-@property (strong,nonatomic) NSString *endtime;
+@interface LocNode : NSObject
+@property (strong,nonatomic) NSString *cityName;
+@property (strong,nonatomic) NSNumber *alevel;
+@property (strong,nonatomic) NSNumber *level;
+@property (strong,nonatomic) NSNumber *lon;
+@property (strong,nonatomic) NSNumber *lat;
+@property (strong,nonatomic) NSString *address;
 @end
-
-

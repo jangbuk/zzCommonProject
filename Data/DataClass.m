@@ -8,6 +8,7 @@
 
 #import "DataClass.h"
 
-@implementation MSG
+
+@implementation LocNode
 
 @end

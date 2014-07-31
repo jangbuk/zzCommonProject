@@ -15,6 +15,7 @@
 		187FD48A198A11E100623648 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 187FD489198A11E100623648 /* libz.dylib */; };
 		187FD48C198A11E600623648 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 187FD48B198A11E600623648 /* libstdc++.dylib */; };
 		187FD48E198A129900623648 /* psb.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 187FD48D198A129900623648 /* psb.jpeg */; };
+		187FD491198A217900623648 /* zzPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 187FD490198A217900623648 /* zzPickerView.m */; };
 		18B0FBFD198A0D1D00A87C7D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B0FBFC198A0D1D00A87C7D /* Foundation.framework */; };
 		18B0FBFF198A0D1D00A87C7D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B0FBFE198A0D1D00A87C7D /* CoreGraphics.framework */; };
 		18B0FC01198A0D1D00A87C7D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B0FC00198A0D1D00A87C7D /* UIKit.framework */; };
@@ -83,6 +84,8 @@
 		187FD489198A11E100623648 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		187FD48B198A11E600623648 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
 		187FD48D198A129900623648 /* psb.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = psb.jpeg; sourceTree = "<group>"; };
+		187FD48F198A217900623648 /* zzPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zzPickerView.h; sourceTree = "<group>"; };
+		187FD490198A217900623648 /* zzPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = zzPickerView.m; sourceTree = "<group>"; };
 		18B0FBF9198A0D1D00A87C7D /* zzProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zzProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18B0FBFC198A0D1D00A87C7D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		18B0FBFE198A0D1D00A87C7D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -422,6 +425,8 @@
 		18B0FC5F198A0DBB00A87C7D /* zzFiles */ = {
 			isa = PBXGroup;
 			children = (
+				187FD48F198A217900623648 /* zzPickerView.h */,
+				187FD490198A217900623648 /* zzPickerView.m */,
 				187FD481198A113000623648 /* zzInsetsTextField.h */,
 				187FD482198A113000623648 /* zzInsetsTextField.m */,
 				187FD483198A113000623648 /* zzLineLabel.h */,
@@ -590,6 +595,7 @@
 				18B0FC0D198A0D1D00A87C7D /* AppDelegate.m in Sources */,
 				18B0FC86198A0DBB00A87C7D /* DataTableDelegate.m in Sources */,
 				18B0FC09198A0D1D00A87C7D /* main.m in Sources */,
+				187FD491198A217900623648 /* zzPickerView.m in Sources */,
 				18B0FC93198A0DBB00A87C7D /* zzViewController.m in Sources */,
 				18B0FC7F198A0DBB00A87C7D /* MBProgressHUD.m in Sources */,
 				187FD47C198A104E00623648 /* zzOpenGPS.m in Sources */,

@@ -7,13 +7,13 @@
 //
 ///////手势控制图片的放大缩小
 #import <UIKit/UIKit.h>
-//#import "zzm"
 @interface zzMoveScaleImageController : zzViewController<UIScrollViewDelegate>{
     UIScrollView *myScrollView;
     UIButton *myImageView;
-@public UIImage *m_image;
 }
 @property(retain,nonatomic)UIScrollView *myScrollView;
 @property(retain,nonatomic)UIButton *myImageView;
+
+@property (strong,nonatomic) UIImage *m_image;
 
 @end

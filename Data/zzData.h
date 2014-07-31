@@ -11,5 +11,7 @@
 #import "DataClass.h"
 
 @interface zzData : zzCommon
-@property (strong,nonatomic) MSG *myMsg;
+
+-(LocNode *)getStringFromPost;
+
 @end

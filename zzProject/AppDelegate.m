@@ -10,7 +10,7 @@
 #import "ViewController.h"
 
 #import "MobClick.h"
-#define UMENG_APPKEY @"53c799e056240bcfc******"
+#define UMENG_APPKEY @"53c799e056240bcfc******"//umeng_key
 
 zzData *g_data;
 
@@ -28,6 +28,7 @@ zzData *g_data;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
+    //开启umeng自动更新
     [self OpenUMeng];
     return YES;
 }

@@ -9,5 +9,10 @@
 #import "zzViewController.h"
 
 @interface ViewController : UIViewController
+- (IBAction)touchGetPostMsg:(id)sender;
+- (IBAction)touchScrolImage:(id)sender;
+- (IBAction)touchDownShowImageView:(id)sender;
+- (IBAction)touchSelectDate:(id)sender;
+- (IBAction)touchSelectIndex:(id)sender;
 
 @end
