@@ -58,10 +58,8 @@
 
 +(void)SetViewBorder:(UIView*)view
 {
-    //    view.layer.borderWidth=1.0;
-    //    view.layer.borderColor=[[UIColor grayColor] CGColor];
     
-    view.layer.borderColor = [UIColor whiteColor].CGColor;
+    view.layer.borderColor = [UIColor blackColor].CGColor;
     
     view.layer.borderWidth =1.0;
     
@@ -71,7 +69,7 @@
 +(NSString*)Date2String:(NSDate*)date
 {
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    [formatter setDateFormat : @"yyyy-MM-dd"];// HH:mm:ss
+    [formatter setDateFormat : @"yyyy-MM-dd HH:mm:ss"];//yyyy-MM-dd HH:mm:ss
     return [formatter stringFromDate:date];
 }
 
@@ -124,12 +122,9 @@
     return num;
     
 }
-+(CGSize)GetStringSize:(NSString *)str  font:(UIFont*)_font  ConWidth:(int)_width
++(CGSize)GetStringSize:(NSString *)str  font:(UIFont*)_font  ConWidth:(float)_width
 {
-    CGSize size = [str sizeWithFont:_font constrainedToSize:CGSizeMake(_width, MAXFLOAT) lineBreakMode:UILineBreakModeWordWrap];
-    size.height = size.height + 36.0;
-    
-    return size;
+    return [str sizeWithFont:_font constrainedToSize:CGSizeMake(_width, 20000.0f) lineBreakMode:NSLineBreakByWordWrapping];
 }
 +(void)zzLog:(NSString*)str
 {

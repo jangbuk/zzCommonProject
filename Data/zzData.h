@@ -9,9 +9,14 @@
 #import <Foundation/Foundation.h>
 #import "GlobalData.h"
 #import "DataClass.h"
+#import "CSqlite.h"
 
 @interface zzData : zzCommon
 
+@property (strong,nonatomic) CSqlite *sqlite;
+
 -(LocNode *)getStringFromPost;
+
+-(NSMutableArray*)readDataFromSqlite;
 
 @end

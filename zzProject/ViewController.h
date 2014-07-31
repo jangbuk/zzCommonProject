@@ -14,5 +14,13 @@
 - (IBAction)touchDownShowImageView:(id)sender;
 - (IBAction)touchSelectDate:(id)sender;
 - (IBAction)touchSelectIndex:(id)sender;
+- (IBAction)touchBiankuang:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *btnBiankuang;
+@property (weak, nonatomic) IBOutlet UILabel *sizeLabel;
+- (IBAction)touchLabelSize:(id)sender;
+- (IBAction)touchAnimation:(id)sender;
+- (IBAction)touchGetTime:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *btnTime;
+- (IBAction)touchOpenSqlite:(id)sender;
 
 @end

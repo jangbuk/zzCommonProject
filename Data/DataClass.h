@@ -16,3 +16,8 @@
 @property (strong,nonatomic) NSNumber *lat;
 @property (strong,nonatomic) NSString *address;
 @end
+
+@interface SqlNode : NSObject
+@property (strong,nonatomic) NSString *t1;
+@property (strong,nonatomic) NSNumber *t2;
+@end

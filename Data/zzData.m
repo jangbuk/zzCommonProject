@@ -21,6 +21,8 @@
     self = [super init];
     if(self)
     {
+        self.sqlite = [[CSqlite alloc]init];
+        [self.sqlite openSqlite:@"db.sqlite"];
     }
     return self;
 }
@@ -42,4 +44,23 @@
     return node;
 }
 
+//从sqlite数据库读取数据
+-(NSMutableArray*)readDataFromSqlite
+{
+    NSMutableArray *list = [[NSMutableArray alloc]init];
+    
+    NSString *sql = @"select * from ztable";
+    NSArray *array = [self.sqlite NSSelectData:sql];
+    for(int i=0;i<array.count;i++)
+    {
+        NSDictionary *dic = [array objectAtIndex:i];
+        SqlNode *node = [[SqlNode alloc]init];
+        node.t1 = [dic objectForKey:@"t1"];
+        node.t2 = [dic objectForKey:@"t2"];
+        
+        [list addObject:node];
+    }
+    
+    return list;
+}
 @end

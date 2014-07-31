@@ -12,3 +12,7 @@
 @implementation LocNode
 
 @end
+
+@implementation SqlNode
+
+@end

@@ -80,4 +80,41 @@
     [window addSubview:selView];
     [selView initPickView];
 }
+//给uiview描边框
+- (IBAction)touchBiankuang:(id)sender {
+    [zzCommon SetViewBorder:self.btnBiankuang];
+}
+//根基字符串计算label尺寸
+- (IBAction)touchLabelSize:(id)sender {
+    NSString *str = @"中华人民共和国中华人民共和国中华人民共和国中华人民共和国中华人民共和国中华人民共和国中华人民共和国";
+    
+    CGRect frame = self.sizeLabel.frame;
+    CGSize size = [zzCommon GetStringSize:str font:self.sizeLabel.font ConWidth:frame.size.width];
+    frame.size.height = size.height;
+    self.sizeLabel.text = str;
+    self.sizeLabel.frame = frame;
+}
+//简单的动画
+- (IBAction)touchAnimation:(id)sender {
+    [zzAnimat ZAMoveView:self.sizeLabel oldFrame:self.sizeLabel.frame newFrame:CGRectMake(0, 0, 200, 30) time:0.7];
+}
+//获取当前时间
+- (IBAction)touchGetTime:(id)sender {
+    NSString *str = [zzCommon Date2String:[NSDate date]];
+    [self.btnTime setTitle:str forState:UIControlStateNormal];
+}
+//从sqlite数据库读取数据
+- (IBAction)touchOpenSqlite:(id)sender {
+    NSMutableArray *list = [g_data readDataFromSqlite];
+    
+    NSMutableString *str = [[NSMutableString alloc]init];
+    for(int i=0;i<list.count;i++)
+    {
+        SqlNode *node = [list objectAtIndex:i];
+        [str appendFormat:@"t1:%@  t2:%@\r\n",node.t1,node.t2];
+    }
+    
+    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:nil message:str delegate:self cancelButtonTitle:@"确定" otherButtonTitles: nil];
+    [alert show];
+}
 @end

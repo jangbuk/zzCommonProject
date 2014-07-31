@@ -55,7 +55,7 @@
 +(void)zzLog:(NSString*)str;
 +(void)zzDelLog;
 
-+(CGSize)GetStringSize:(NSString *)str  font:(UIFont*)_font  ConWidth:(int)_width;
++(CGSize)GetStringSize:(NSString *)str  font:(UIFont*)_font  ConWidth:(float)_width;
 
 +(NSString*)GetCacheDicPath:(NSString*)fileName;
 
