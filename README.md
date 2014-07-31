@@ -1,8 +1,8 @@
 zzCommonProject
 ===============
 本项目由zzzili提供源码
-提供一个轻量级的ios开发工具包(zzCommon)
-工具包内包含了ios开发中常用的一些实体类工具，包括(异步图片下载、自动版本更新、JSON字符串解析、POST请求等工具),旨在为ios开发的同事提供便捷的项目基础开发框架
+这是一个轻量级的ios开发工具包(zzCommon)
+工具包内包含了ios开发中常用的一些实体类工具，包括(异步图片下载、自动版本更新、JSON字符串解析、POST请求等),宗旨在为ios开发的同学着提供便捷的基础项目框架
 
 
 1.异步图片下载(zzImageView):用法类似开源项目SDWebImage的一个轻量级工具(只有两个文件,支持ARC)。
@@ -15,12 +15,20 @@ zzCommonProject
 
 5.字符串保存到文件(zzCache):吧字符串缓存到本地,存储到cache目录。
 
-6.封装时间选取PickerView:具有弹出和弹出效果。
+6.简单的序列选择器(UIPickerView)。
 
 7.对View进行描边框。
 
-8.获取字符串所在uilabel的尺寸。
+8.根据字符串获取UILabel的CGSize。
 
 9.从nsdate转为string
 
 10.图片缩放controller：zzMoveScaleImageController。
+
+11.NSDate转换为NSString
+
+12.从Sqlite读取数据。
+
+13.简单的时间选择器。
+
+更多功能正在添加中......
