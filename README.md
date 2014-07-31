@@ -5,4 +5,10 @@ zzCommonProject
 工具包内包含了ios开发中常用的一些实体类工具，包括(异步图片下载、自动版本更新、JSON字符串解析、POST请求等工具),旨在为ios开发的同事提供便捷的项目基础开发框架
 
 
-异步图片下载(zzImageView)，用法类似开源项目SDWebImage的一个轻量级工具(只有两个文件,支持ARC)
+1.异步图片下载(zzImageView):用法类似开源项目SDWebImage的一个轻量级工具(只有两个文件,支持ARC)。
+
+2.UMeng自动版本更新:基于友盟开放平台提供的版本号管理功能,本地版本自动和服务器版本匹配提示更新。
+
+3.JSON数据解析:基于JSONKIT框架,封装了几个简单易用的函数,包含在了zzCommon类中。很方便的吧json string转换为nsdictionary。
+
+4.POST请求:通过直接封装IOS的Request请求，只需传两个参数就可以完成一个post请求。
