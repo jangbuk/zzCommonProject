@@ -15,14 +15,20 @@ zzCommonProject
 
 5.字符串保存到文件(zzCache):吧字符串缓存到本地,存储到cache目录。
 
-6.封装时间选取PickerView:具有弹出和弹出效果。
+6.简单的序列选择器(UIPickerView)。
 
 7.对View进行描边框。
 
-8.获取字符串所在uilabel的尺寸。
+8.根据字符串获取UILabel的CGSize。
 
 9.从nsdate转为string
 
 10.图片缩放controller：zzMoveScaleImageController。
+
+11.NSDate转换为NSString
+
+12.从Sqlite读取数据。
+
+13.简单的时间选择器。
 
 更多功能正在添加中......
