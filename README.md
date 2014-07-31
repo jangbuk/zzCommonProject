@@ -12,3 +12,15 @@ zzCommonProject
 3.JSON数据解析:基于JSONKIT框架,封装了几个简单易用的函数,包含在了zzCommon类中。很方便的吧json string转换为nsdictionary。
 
 4.POST请求:通过直接封装IOS的Request请求，只需传两个参数就可以完成一个post请求。
+
+5.字符串保存到文件(zzCache):吧字符串缓存到本地,存储到cache目录。
+
+6.封装时间选取PickerView:具有弹出和弹出效果。
+
+7.对View进行描边框。
+
+8.获取字符串所在uilabel的尺寸。
+
+9.从nsdate转为string
+
+10.图片缩放controller：zzMoveScaleImageController。
