@@ -11,9 +11,7 @@
 @class ViewController;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
-{
-    NSString *newVersionPath;
-}
+
 
 @property (strong, nonatomic) UIWindow *window;
 
