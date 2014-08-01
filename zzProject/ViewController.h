@@ -9,6 +9,7 @@
 #import "zzViewController.h"
 
 @interface ViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIScrollView *baseScroll;
 - (IBAction)touchGetPostMsg:(id)sender;
 - (IBAction)touchScrolImage:(id)sender;
 - (IBAction)touchDownShowImageView:(id)sender;
@@ -22,5 +23,6 @@
 - (IBAction)touchGetTime:(id)sender;
 @property (weak, nonatomic) IBOutlet UIButton *btnTime;
 - (IBAction)touchOpenSqlite:(id)sender;
+- (IBAction)touchProcess:(id)sender;
 
 @end

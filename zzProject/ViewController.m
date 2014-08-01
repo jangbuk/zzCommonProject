@@ -29,6 +29,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.navigationItem.title = @"演示";
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -60,7 +61,7 @@
     //类似SDWebImage，在uitableview中也实用
     zzImageView *imageView = [[zzImageView alloc]initWithUrl:@"http://d.hiphotos.baidu.com/image/pic/item/ca1349540923dd54bd2627e2d309b3de9d8248e7.jpg"];
     imageView.frame = CGRectMake(20, 50, 80, 100);
-    [self.view addSubview:imageView];
+    [self.baseScroll addSubview:imageView];
 }
 //弹出时间选择器
 - (IBAction)touchSelectDate:(id)sender {
@@ -116,5 +117,34 @@
     
     UIAlertView *alert = [[UIAlertView alloc]initWithTitle:nil message:str delegate:self cancelButtonTitle:@"确定" otherButtonTitles: nil];
     [alert show];
+}
+
+////自定义系统状态栏
+- (IBAction)touchProcess:(id)sender {
+    ///隐藏系统状态栏
+    UIApplication *app = [UIApplication sharedApplication];
+    //[app setStatusBarHidden:YES withAnimation:YES];
+    [app.keyWindow setWindowLevel:UIWindowLevelStatusBar];
+    
+    //自定义view加到顶部
+    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 320, 20)];
+    view.backgroundColor = [UIColor clearColor];
+    [app.keyWindow addSubview:view];
+    
+    //加上label
+    UILabel *label = [[UILabel alloc]init];
+    label.frame = CGRectMake(220, 0, 100, 20);
+    label.textColor = [UIColor blackColor];
+    label.font = [UIFont boldSystemFontOfSize:10];
+    label.text = @"这个是自定义状态栏";
+    [view addSubview:label];
+    
+    //测试效果
+    ViewController *page = [[ViewController alloc]init];
+    [self.navigationController pushViewController:page animated:YES];
+
+//    ////下面代码是把状态栏再显示出来
+//    [app.keyWindow setWindowLevel:UIWindowLevelNormal];
+//    [view removeFromSuperview];
 }
 @end
